@@ -8,10 +8,28 @@
 		body {
 			font-size:1.2em;
 			text-align:center;
+			font-weight:bold;
+		}
+		p {
+			color:red;
 		}
 	</style>
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var num = prompt("몇 까지 3의 배수를 찾을까요?");
+		var check = 0;
+		if(num !== null){
+			for(var i=1; i<=num; i++){
+				if(i%3 === 0){
+					document.write(i + ", ");
+					check++;
+				}
+			}
+			document.write("<p>" + num + "까지 3의 배수의 개수 : " + check);
+		}
+		
+	</script>
 </body>
 </html>
