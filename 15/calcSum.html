@@ -6,6 +6,19 @@
 	<title>1부터 n까지 더하기</title>
 </head>
 <body>
+	<script>
+		function calcSum(n) {
+			let sum = 0;
+			for(let i=1; i<=n; i++)
+				sum += i;
+			
+			document.write("1부터 " + n + "까지 더한 결과 : " + sum);
+		}
 
+		var userNum = parseInt(prompt("얼마까지 더할까요?"));
+		if(userNum !== null)
+			calcSum(userNum);
+
+	</script>
 </body>
 </html>
