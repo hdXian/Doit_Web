@@ -24,8 +24,11 @@
   <script>
     document.getElementById('bttn').onclick = displayTime;
 
-    function displayTime(){        
-
+    function displayTime(){
+      var left = (screen.availWidth - 400) / 2;
+      var top = (screen.availHeight - 200) / 2;
+      var opt = "left= " + left + ",top=" + top + ",width=" + 400 + ",height=" + 200;
+      window.open("current.html","popup",opt);
     }
   </script>
 </body>
